@@ -3,6 +3,7 @@ let userName = 'Danny Garcia';
 const userQuestion = 'Will I get desert twice?';
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
+const result = document.querySelector('#status')
 
 // If the user enters a name assign to userName, else, say hello.
 userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
@@ -41,3 +42,9 @@ switch (randomNumber) {
 
 // Print the eightBalls answer to the console
 console.log(`Magic Eightball: ${eightBall}`);
+
+document.querySelector('#play').addEventListener('click', remove)
+// create a function to reload the page and see how changes ir 
+function remove(){
+  window.location.reload()
+}
